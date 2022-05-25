@@ -45,8 +45,17 @@ body{
 
 }
 
-.weather-description{
+.weather-description.loading{
+    visibility: hidden;
+    position: relative;
 
+}
+
+.weather-description.loading:after{
+    visibility:visible;
+    content:'Loading...';
+    position: absolute;
+    top:0;
 }
 
 

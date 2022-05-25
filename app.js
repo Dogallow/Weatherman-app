@@ -29,6 +29,7 @@ let weather = {
         document.querySelector('.wind').innerText=`wind speeds are ${speed}mph`
         document.querySelector('.icon').src = `http://openweathermap.org/img/wn/${icon}@2x.png`
         document.body.style.backgroundImage= "url('https://source.unsplash.com/1600x900/?"+name+"')"
+        document.querySelector('.weather-description').classList.remove('loading')
     }
 }
 
@@ -50,3 +51,5 @@ searchBar.addEventListener('keyup', function(e){
         searchBar.value=""
     }
 })
+
+weather.getLocation('Modesto')
