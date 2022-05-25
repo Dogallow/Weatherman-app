@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    margin: 0;
+}
+
+.card-container{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    border-radius: 20px;
+    padding: 10px;
+    background: #AAAAAAd7;
+    border: none;
+    font-family: inherit;
+    width: 90%;
+}
+
+.search-button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background: #A9B0B0;
+}
+
+.search-button:hover{
+    background:#B1C7C7;
+    cursor:pointer;
+
+}
+
+.weather-description{
+
+}
+
+
+.city{
+    margin-top: .3em;
+    margin-bottom: .3em;
+    font-size: 1.3em;
+}
+
+.temp{
+    font-size:1.2em
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icon{
+    grid-column-start: span 2;
+}
+
+.description{
+ font-size: 1.2em;
+}
+
+
+.wind{
+    font-size: 1.2em;
+}

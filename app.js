@@ -10,7 +10,7 @@ let weather = {
             .then((res)=> res.json())
             .then((data)=>{
                 console.log(data)
-                 this.displayWeather(data)
+                this.displayWeather(data)
             })
 
 
